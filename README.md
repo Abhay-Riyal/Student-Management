@@ -6,18 +6,18 @@ This is a very basic web project made using HTML,CSS,Javascript and Bootstrap.
 basic operations on student records.
 - The whole idea revolves around data and how to make sure that user puts in valid data.
 - It consists of 2 HTML pages.
-  1.index.html
+  1. index.html
     - This page is the entry point for our project.
   2. Database.html
     - This page shows us the records of students that are
       present in local storage.
 - Both of these HTML pages get their own script files name script.js and script2.js
   respectively.
-  1.script.js
+  1. script.js
     - This file handles all the validations and checks that should be put on data
       to maintain its consistency and validity.
     - It ensures only valid data get put in the local storage. 
-  2.script2.js
+  2. script2.js
     - This file brings all the data from local storage and makes it visible to
       the user.
     - It also performs all the sorting and delete operation on the data.
