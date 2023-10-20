@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Student Management System</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="text-center">
+        <h1 class="display-5 mb-5">
+          <strong>Student Management System</strong>
+        </h1>
+      </div>
+      <div class="main row justify-content-center">
+        <form
+          id="student-form"
+          class="row justify-content-center mb-4"
+          autocomplete="off"
+        >
+          <div class="col-10 mb-3">
+            <label for="rollNumber">Roll Number</label>
+            <input
+              class="form-control"
+              id="rollNumber"
+              type="text"
+              placeholder="Enter Roll Number"
+              onchange="rollNumberAlert(this.value)"
+              required
+            />
+          </div>
+          <div class="col-9 alert" id="alertRollNumber">
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none'"
+              >&times;</span
+            >
+            <strong>Warning!</strong>
+            <span id="rollNumberAlert"></span>
+          </div>
+
+          <div class="col-10 mb-3">
+            <label for="firstName">First Name</label>
+            <input
+              class="form-control"
+              id="firstName"
+              type="text"
+              placeholder="Enter First Name"
+              onchange="firstNameAlert(this.value)"
+              required
+            />
+          </div>
+          <div class="col-9 alert" id="alertFirstName">
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none';"
+              >&times;</span
+            >
+            <strong >Warning!</strong>
+            <span id="firstNameAlert"></span>
+          </div>
+
+          <div class="col-10 mb-3">
+            <label for="lastName">Last Name</label>
+            <input
+              class="form-control"
+              id="lastName"
+              type="text"
+              placeholder="Enter Last Name"
+              onchange="lastNameAlert(this.value)"
+              required
+            />
+          </div>
+          <div class="col-9 alert" id="alertLastName">
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none';"
+              >&times;</span
+            >
+            <strong>Warning!</strong>
+            <span id="lastNameAlert"></span>
+          </div>
+
+          <div class="col-10 mb-3">
+            <label for="phoneNumber">Phone Number</label>
+            <input
+              class="form-control"
+              id="phoneNumber"
+              type="text"
+              placeholder="Enter Phone Number"
+              onchange="phoneNumberAlert(this.value)"
+              required
+            />
+          </div>
+          <div class="col-9 alert" id="alertPhoneNumber">
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none';"
+              >&times;</span
+            >
+            <strong >Warning!</strong>
+            <span id="phoneNumberAlert"></span>
+          </div>
+
+          <div class="col-10 mb-3">
+            <label for="email">Email</label>
+            <input
+              class="form-control"
+              id="email"
+              type="text"
+              placeholder="Enter email"
+              onchange="emailAlert(this.value)"
+              required
+            />
+          </div>
+          <div class="col-9 alert" id="alertEmail">
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none';"
+              >&times;</span
+            >
+            <strong >Warning!</strong>
+            <span id="emailAlert"></span>
+          </div>
+
+          <div class="col-10 mb-3">
+            <label for="cgpa">CGPA</label>
+            <input
+              class="form-control"
+              id="cgpa"
+              type="text"
+              placeholder="Enter cgpa"
+              onchange="cgpaAlert(this.value)"
+              required
+            />
+          </div>
+          <div class="col-9 alert" id="alertCgpa">
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none';"
+              >&times;</span
+            >
+            <strong >Warning!</strong>
+            <span id="cgpaAlert"></span>
+          </div>
+
+          <div class="col-8">
+            <button
+              class="btn btn-success add-btn"
+              type="submit"
+            >Submit</button>
+          </div>
+
+          <div class="col-2">
+            <a href="./database.html" class="btn btn-primary">Show Database</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

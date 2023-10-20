@@ -1,0 +1,87 @@
+body{
+  color: white;
+  background-color: #1d2630;
+}
+
+.alert {
+  padding: 5px;
+  background-color:/*#ff9800*/ #f44336; 
+  color: white;
+  margin-bottom: 15px;
+  
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+#alertRollNumber{
+  display:none;
+}
+
+#alertFirstName{
+  display: none;
+}
+
+#alertLastName{
+  display: none;
+}
+
+#alertPhoneNumber{
+  display: none;
+}
+
+#alertEmail{
+  display: none;
+}
+
+#alertCgpa{
+  display: none;
+}
+
+.pop-success{
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.pop-danger{
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.pop-revert{
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.pop-sort{
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+
+.pop{
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+
