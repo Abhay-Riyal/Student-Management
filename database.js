@@ -67,7 +67,7 @@ document.getElementById('revert').addEventListener('click',()=>{
 
 document.getElementById('sortRnumber').addEventListener('click',()=>{
     const data=JSON.parse(localStorage.getItem('students'));
-    data.sort((a,b) => Number(a.rollNumber) - Number(b.rollNumber));
+    data.sort((a,b) => a.rollNumber - b.rollNumber);
     removeTableContent();
     data.forEach(element => {
         let row=document.createElement('tr');
