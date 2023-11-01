@@ -64,7 +64,7 @@ function rollNumberAlert(rollNumber) {
     document.getElementById('rollNumberAlert').innerHTML = `${rollNumber} is not a valid Roll Number. Please enter a Roll Number in the range [1-4000].`;
     document.getElementById('alertRollNumber').style.display = 'block';
     return false;
-  }
+  };
 }
 
 function firstNameAlert(firstName) {
